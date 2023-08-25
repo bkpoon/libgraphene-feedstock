@@ -17,7 +17,6 @@ cd forgebuild
 
 export PKG_CONFIG_PATH="$PREFIX/lib/pkgconfig:$BUILD_PREFIX/lib/pkgconfig"
 
-meson "${meson_options[@]}" --prefix=$PREFIX ..
+meson "${meson_options[@]}" --prefix=$PREFIX ${MESON_ARGS} ..
 ninja -j$CPU_COUNT -v
 ninja install
-
