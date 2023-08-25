@@ -9,7 +9,7 @@ meson_options=(
     -Dgobject_types=true
     -Dinstalled_tests=false
     -Dlibdir=lib
-    -Dintrospection=enabled
+    # -Dintrospection=enabled
     --wrap-mode=nofallback
 )
 mkdir forgebuild
